@@ -1,8 +1,10 @@
 Object Detection Using Webcam
-AIM:
+
+**AIM:**
 To write a Python code to detect objects using a webcam.
 
-PROCEDURE:
+**PROCEDURE:**
+
 STEP-1: Load the pre-trained YOLOv4 network (.weights and .cfg) using cv2.dnn.readNet().
 
 STEP-2: Read class labels (COCO dataset) from the coco.names file.
@@ -13,10 +15,11 @@ STEP-4: Start webcam video capture using cv2.VideoCapture(0).
 
 STEP-5: Process each frame:
 
-Convert the frame to a YOLO-compatible input using cv2.dnn.blobFromImage().
-Pass the blob into the network (net.setInput()).
-Run forward pass to get detections (net.forward()).
-Parse the output to extract bounding boxes, confidence scores, and class IDs for detected objects.
+    Convert the frame to a YOLO-compatible input using cv2.dnn.blobFromImage().
+    Pass the blob into the network (net.setInput()).
+    Run forward pass to get detections (net.forward()).
+    Parse the output to extract bounding boxes, confidence scores, and class IDs for detected objects.
+    
 STEP-6: Use NMS to remove overlapping bounding boxes and retain the best ones.
 
 STEP-7: Draw bounding boxes and labels on detected objects using cv2.rectangle() and cv2.putText().
@@ -27,8 +30,9 @@ STEP-9: Exit the loop if the 'q' key is pressed.
 
 STEP-10: Release the video capture and close any OpenCV windows using cap.release() and cv2.destroyAllWindows().
 
-PROGRAM:
-NAME: Priyadharshan S REG.NO: 212223240127
+NAME: Priyadharshan S 
+REG.NO: 212223240127
+**PROGRAM:**
 
 ```python
 import cv2
@@ -109,7 +113,8 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-OUTPUT:
+**OUTPUT:**
+![image](https://github.com/user-attachments/assets/f37be240-de35-45b7-abcf-a03b3b1de8bf)
 
-RESULT:
+**RESULT:**
 Thus, the Python Program to detect object using web camera as been successfully executed.
