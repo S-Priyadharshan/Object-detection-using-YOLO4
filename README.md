@@ -30,6 +30,7 @@ STEP-10: Release the video capture and close any OpenCV windows using cap.releas
 PROGRAM:
 NAME: Priyadharshan S REG.NO: 212223240127
 
+```python
 import cv2
 import numpy as np
 
@@ -106,6 +107,8 @@ while True:
 # Release video capture and close windows
 cap.release()
 cv2.destroyAllWindows()
+```
+
 OUTPUT:
 
 RESULT:
